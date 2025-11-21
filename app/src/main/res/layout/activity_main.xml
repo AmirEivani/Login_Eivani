@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF7FF"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="50dp"
+    android:paddingBottom="32dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Homework"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#241332"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/tvAppSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please login with username and password"
+            android:textSize="14sp"
+            android:textColor="#7A6A8F"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Card with username/password + login -->
+        <LinearLayout
+            android:id="@+id/loginCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_login_card"
+            android:elevation="4dp"
+            android:padding="20dp"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvLoginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#241332"
+                android:layout_marginBottom="16dp" />
+
+            <!-- USERNAME -->
+            <EditText
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="text"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_marginBottom="18dp" />
+
+            <!-- PASSWORD -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:background="@drawable/bg_input_field"
+                android:layout_marginBottom="16dp" />
+
+            <!-- LOGIN BUTTON -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_primary_button"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
